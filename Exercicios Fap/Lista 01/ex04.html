@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var salarioF = parseFloat(prompt('Digite seu Salario: '))
+        var percReajust = parseFloat(prompt('Digite seu percentual do reajuste: '))
+
+        function calcReajuste(){
+            var result = (salarioF * percReajust) / 100 
+            return result 
+        }
+
+        var result = calcReajuste(salarioF, percReajust)
+        var resultFinal = result + salarioF 
+
+        alert('O valor do seu novo salario é : ' + resultFinal)
+
+
+
+
+
+
+    </script>
+</body>
+</html>

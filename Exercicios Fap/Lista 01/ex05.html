@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var kmInicial = parseFloat(prompt('Digite sua quilometragem inicial: '))
+        var kmFinal = parseFloat(prompt('Digite sua quilometragem final: '))
+        var ltConsumidos = parseFloat(prompt('Digite os litos consumidos: '))
+        var precoCombustivel = parseFloat(prompt('Digite o preço do combustivel: '))
+
+        function calcDistancia (){
+            var distancia = kmFinal - kmInicial
+            return distancia
+        }
+
+        var distancia = calcDistancia(kmFinal, kmInicial)
+        alert(distancia)
+
+
+        function calcGasto (){
+            var gasto = distancia * precoCombustivel
+            return gasto
+        }
+        
+        var gasto = calcGasto(distancia, precoCombustivel)
+        alert(gasto)
+
+        function calcCunsumo(){
+            var consumo = distancia/ltConsumidos
+            return consumo
+        }
+        
+        var consumo = calcCunsumo(distancia, ltConsumidos)
+        alert(consumo)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var usNome = prompt("Digite seu nome :")
+        var usIdade = parseInt(prompt('Digite sua idade :'))
+        var paiNome = prompt('Digite o nome de seu pai :')
+        var paiIdade = parseInt(prompt('Digite a idade de seu pai :'))
+        var maeNome = prompt('Digite o nome de sua mãe :')
+        var maeIdade = parseInt(prompt('Digite a idade de sua mãe :'))
+
+        function calcMae(){
+            var mae = maeIdade - usIdade
+            return mae
+        }
+
+        var mae = calcMae(maeIdade, usIdade)
+
+        function calcPai(){
+            var pai = paiIdade - usIdade
+            return pai
+        }
+
+        var pai = calcPai(paiIdade, usIdade)
+
+        alert(usNome + ', quando voçe nasceu, Dona ' + maeNome + ' tinha ' + mae + ' anos e Seu ' + paiNome + ' tinha ' + pai + ' anos.' )
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

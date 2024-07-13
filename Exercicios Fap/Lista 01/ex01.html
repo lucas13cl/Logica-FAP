@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>      
+        var nota1 = parseInt(prompt('Digite sua primeira nota:'))//Pegar informações do usuario
+        var nota2 = parseInt(prompt('Digite sua segunda nota:'))
+        var nota3 = parseInt(prompt('Digite sua terceiro nota:'))
+        
+        function calcularMedia(){ 
+            var media = (nota1 + nota2 + nota3 )/ 3
+            return media
+        }
+
+        var media = calcularMedia(nota1, nota2, nota3)
+        alert(media)
+    </script>
+</body>
+</html>
