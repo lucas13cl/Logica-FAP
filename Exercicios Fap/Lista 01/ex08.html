@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let salario = parseFloat(prompt('Digite seu Salario : '))
+        
+        function calcAumentoSalarial(){
+         
+            let percentualAumento;
+            let aumento;
+            let novoSalario;
+            
+            // Percentual de aumento com base no salario atual
+            if (salario <= 0 ){
+                alert('Não existe reajuste para esse valor')
+            }else if(salario <= 280){
+                percentualAumento = 20
+            }else if (salario <= 700){
+                percentualAumento = 15
+            }else if(salario <= 1500){
+                percentualAumento = 10
+            }else{
+                percentualAumento = 5
+            }
+        
+            // calculo do aumento e do novo salario
+            aumento = salario * (percentualAumento / 100)
+            novoSalario = salario + aumento
+        
+            
+            alert('O percentual do aumento aplicado é ' + percentualAumento + '%')
+            alert(' O Valor do aumento foi : ' + aumento)
+            alert('Seu novo salário após o aumento : ' + novoSalario)
+        
+        
+        }
+
+        calcAumentoSalarial()
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

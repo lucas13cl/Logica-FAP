@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+        let num1 = parseInt(prompt('Digite um número : '))
+        let num2 = parseInt(prompt('Digite um número : '))
+        let num3 = parseInt(prompt('Digite um número : '))
+               
+        function maiorNumero(){
+             
+             let maior = num1
+            
+            if(num2 > num1 && num2 > num3){
+                maior = num2
+            }else if(num3 > num1 && num3 > num2){
+                maior = num3
+            }
+             
+            return maior;   
+        }
+        
+        function menorNumero(){
+            
+         let menor = num1
+       
+            if(num2 < num1 && num2 < num3){
+                menor = num2
+            }else if(num3 < num1 && num3 < num2){
+                menor = num3
+            }
+            
+            return menor;        
+        }
+         
+        let maior = maiorNumero()
+        let menor = menorNumero()
+        
+        alert('O maior número é ' + maior)
+        alert('O menor número é ' + menor)
+    
+    
+    
+    </script>
+</body>
+</html>
